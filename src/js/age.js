@@ -6,6 +6,7 @@ export default class Age {
     this.marsAge = 0;
     this.jupAge = 0;
     this.satAge = 0;
+    this.urAge = 0;
   }
 
   calcAge() {
@@ -14,12 +15,9 @@ export default class Age {
     this.marsAge = Math.round((this.earthAge/1.88)*10)/10;
     this.jupAge = Math.round((this.earthAge/11.86)*10)/10;
     this.satAge = Math.round((this.earthAge/29.46)*100)/100
+    this.urAge = Math.round((this.earthAge/84.01)*100)/100
   }
-
-  calcUrAge() {
-    return Math.round((this.earthAge/84.01)*100)/100
-  }
-
+  
   calcNepAge() {
     return Math.round((this.earthAge/164.79)*100)/100
   }
