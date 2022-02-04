@@ -27,6 +27,10 @@ describe ('calcAge', () => {
   test('should calculate age on Mars', () => {
     expect(age.marsAge).toEqual(14.4);
   });
+
+  test('should calculate age on Jupiter', () => {
+    expect(age.jupAge).toEqual(2.3);
+  });
 });
 
 describe ('calcJupAge', () => {
