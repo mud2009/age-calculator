@@ -39,3 +39,11 @@ describe ('calcJupAge', () => {
     expect(age.calcJupAge()).toEqual(2);
   });
 });
+
+describe ('calcSatAge', () => {
+
+  test('should calculate age on Saturn', () => {
+    let age = new Age(27);
+    expect(age.calcSatAge()).toEqual(2);
+  });
+});
