@@ -4,9 +4,10 @@ export default class Age {
   }
 
   calcMercAge() {
-    return this.earthAge/.24;
+    return Math.floor(this.earthAge/.24);
   }
 
   calcVenAge() {
+    return Math.floor(this.earthAge/.62);
   }
 }
