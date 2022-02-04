@@ -67,3 +67,14 @@ describe ('calcVenLife', () => {
     expect(ageOld.venLifeLived).toEqual(88.56);
   });
 });
+
+describe ('calcMarsLife', () => {
+
+  beforeEach(() => {
+    age.calcMarsLife();
+  });
+
+  test('should calculate years left for age on Mars', () => {
+    expect(age.marsLifeLeft).toEqual(29.24);
+  });
+});
