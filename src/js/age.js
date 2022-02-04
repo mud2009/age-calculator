@@ -31,9 +31,8 @@ export default class Age {
   }
 }
 
-// let age = new Age(27);
+// let age = new Age(4);
 // age.calcAge();
 // age.calcLife();  
-// console.log(age.mercAge)
 // console.log(age)
 // console.log(age.mercLifeLived)
