@@ -75,6 +75,6 @@ describe ('calcMarsLife', () => {
   });
 
   test('should calculate years left for age on Mars', () => {
-    expect(age.marsLifeLeft).toEqual(29.24);
+    expect(age.marsLifeLeft).toEqual(58.34);
   });
 });

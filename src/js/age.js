@@ -29,10 +29,16 @@ export default class Age {
       this.venLifeLived = -this.venLifeLeft;
     }
   }
+
+  calcMarsLife() {
+    this.marsLifeLeft = Math.round((72.74 - this.marsAge)*100)/100;
+
+  }
+
 }
 
-let age = new Age(100);
+let age = new Age(27);
 age.calcAge();
-age.calcVenLife();  
+age.calcMarsLife();  
 console.log(age)
-console.log(age.venLifeLived)
+// console.log(age.marsLifeLived)
