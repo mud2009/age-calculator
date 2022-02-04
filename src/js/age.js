@@ -3,15 +3,13 @@ export default class Age {
     this.earthAge = earthAge;
     this.mercAge = 0;
     this.venAge = 0;
+    this.marsAge = 0;
   }
 
   calcAge() {
     this.mercAge = Math.round((this.earthAge/.24)*10)/10;
     this.venAge = Math.round((this.earthAge/.62)*10)/10;
-  }
-
-  calcMarsAge() {
-    return Math.round((this.earthAge/1.88)*10)/10;
+    this.marsAge = Math.round((this.earthAge/1.88)*10)/10;
   }
 
   calcJupAge() {
