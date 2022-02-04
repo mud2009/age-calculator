@@ -26,39 +26,44 @@ describe ('calcAge', () => {
   test('should calculate age on Jupiter', () => {
     expect(age.jupAge).toEqual(2.3);
   });
-  test('should calculate age on Saturn', () => {
-    expect(age.satAge).toEqual(0.92);
-  });
-  test('should calculate age on Uranus', () => {
-    expect(age.urAge).toEqual(0.32);
-  });
-  test('should calculate age on Neptune', () => {
-    expect(age.nepAge).toEqual(0.16);
-  });
-  test('should calculate age on Pluto', () => {
-    expect(age.plutoAge).toEqual(0.11);
-  });
 });
 
 describe ('calcMercLife', () => {
 
   beforeEach(() => {
     age.calcMercLife();
-  })
+  });
 
-  test('should calculate life expectancy for age on earth', () => {
-    expect(age.life).toEqual(72.74);
-  })
   test('should calculate years left for age on mercury', () => {
     expect(age.mercLifeLeft).toEqual(-39.76);
-  })
+  });
   test('if the mercury age is under the human life expectancy, should return life left', () => {
     let ageYoung = new Age(4);
     ageYoung.calcAge();
     ageYoung.calcMercLife();
     expect(ageYoung.mercLifeLeft).toEqual(56.04);
-  })
+  });
   test('should return years lived past life expectancy on mercury, if age is high enough', () => {
     expect(age.mercLifeLived).toEqual(39.76);
-  })
-})
+  });
+});
+
+describe ('calcVenLife', () => {
+
+  beforeEach(() => {
+    age.calcVenLife();
+  });
+
+  test('should calculate years left for age on venus', () => {
+    expect(age.venLifeLeft).toEqual(29.24);
+  });
+  test('if the venus age is under the human life expectancy, should return life left', () => {
+    expect(age.venLifeLeft).toEqual(29.24);
+  });
+  test('should return years lived past life expectancy on venus, if age is high enough', () => {
+    let ageOld = new Age(100);
+    ageOld.calcAge();
+    ageOld.calcVenLife();
+    expect(ageOld.venLifeLived).toEqual(88.56);
+  });
+});
