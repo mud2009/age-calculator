@@ -35,14 +35,12 @@ describe ('calcAge', () => {
   test('should calculate age on Saturn', () => {
     expect(age.satAge).toEqual(0.92);
   });
-});
-
-describe ('calcUrAge', () => {
 
   test('should calculate age on Uranus', () => {
-    expect(age.calcUrAge()).toEqual(0.32);
+    expect(age.urAge).toEqual(0.32);
   });
 });
+
 
 describe ('calcNepAge', () => {
 
