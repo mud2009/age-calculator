@@ -1,9 +1,14 @@
 import Age from "../src/js/age.js"
 
+let age;
+
+beforeEach(() => {
+  age = new Age(27);
+});
+
 describe ('Age', () => {
 
   test('should construct an Age object', () => {
-    let age = new Age(27);
     expect(age.earthAge).toEqual(27);
   });
 });
@@ -11,7 +16,6 @@ describe ('Age', () => {
 describe ('calcMercAge', () => {
 
   test('should calculate age on Mercury', () => {
-    let age = new Age(27);
     expect(age.calcMercAge()).toEqual(112.5);
   });
 });
@@ -19,7 +23,6 @@ describe ('calcMercAge', () => {
 describe ('calcVenAge', () => {
 
   test('should calculate age on Venus', () => {
-    let age = new Age(27);
     expect(age.calcVenAge()).toEqual(43.5);
   });
 });
@@ -27,7 +30,6 @@ describe ('calcVenAge', () => {
 describe ('calcMarsAge', () => {
 
   test('should calculate age on Mars', () => {
-    let age = new Age(27);
     expect(age.calcMarsAge()).toEqual(14.4);
   });
 });
@@ -35,7 +37,6 @@ describe ('calcMarsAge', () => {
 describe ('calcJupAge', () => {
 
   test('should calculate age on Jupiter', () => {
-    let age = new Age(27);
     expect(age.calcJupAge()).toEqual(2.3);
   });
 });
@@ -43,7 +44,6 @@ describe ('calcJupAge', () => {
 describe ('calcSatAge', () => {
 
   test('should calculate age on Saturn', () => {
-    let age = new Age(27);
     expect(age.calcSatAge()).toEqual(0.92);
   });
 });
@@ -51,7 +51,6 @@ describe ('calcSatAge', () => {
 describe ('calcUrAge', () => {
 
   test('should calculate age on Uranus', () => {
-    let age = new Age(27);
     expect(age.calcUrAge()).toEqual(0.32);
   });
 });
@@ -59,7 +58,6 @@ describe ('calcUrAge', () => {
 describe ('calcNepAge', () => {
 
   test('should calculate age on Neptune', () => {
-    let age = new Age(27);
     expect(age.calcNepAge()).toEqual(0.16);
   });
 });
