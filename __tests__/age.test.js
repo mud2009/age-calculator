@@ -60,4 +60,10 @@ describe ('calcLife', () => {
     expect(age.mercLife).toEqual(39.76);
   })
 
+  test('should return years lived past life expectancy on mercury', () => {
+    let ageReallyOld = new Age(150);
+    age.calcAge();
+    age.calcLife();  
+    expect(ageReallyOld.mercLife).toEqual(77.26);
+  })
 })
