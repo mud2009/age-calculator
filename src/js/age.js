@@ -24,5 +24,5 @@ export default class Age {
   }
 }
 
-let age = new Age(27);
-console.log(age.calcSatAge())
+// let age = new Age(27);
+// console.log(age.calcSatAge())
