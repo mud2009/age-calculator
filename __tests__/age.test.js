@@ -43,9 +43,6 @@ describe ('calcMercLife', () => {
     ageYoung.calcMercLife();
     expect(ageYoung.mercLifeLeft).toEqual(56.04);
   });
-  test('should return years lived past life expectancy on mercury, if age is high enough', () => {
-    expect(age.mercLifeLived).toEqual(39.76);
-  });
 });
 
 describe ('calcVenLife', () => {
@@ -54,7 +51,7 @@ describe ('calcVenLife', () => {
     age.calcVenLife();
   });
 
-  test('should calculate years left for age on venus, and return years left', () => {
+  test('should calculate years left for age on venus, and return years left if that number is positive', () => {
     expect(age.venLifeLeft).toEqual(29.24);
   });
   test('should return years lived past life expectancy on venus, if age is high enough', () => {
@@ -71,7 +68,7 @@ describe ('calcMarsLife', () => {
     age.calcMarsLife();
   });
 
-  test('should calculate years left for age on Mars, and return years left', () => {
+  test('should calculate years left for age on Mars, and return years left if that number is positive', () => {
     expect(age.marsLifeLeft).toEqual(58.34);
   });
 
@@ -81,4 +78,16 @@ describe ('calcMarsLife', () => {
     ageOld.calcMarsLife();
     expect(ageOld.marsLifeLived).toEqual(33.66);
   });
+});
+
+describe ('calcJupLife', () => {
+
+  beforeEach(() => {
+    age.calcJupLife();
+  });
+
+  test('should calculate years left for age on jupiter, and return years left if that number is positive', () => {
+    expect(age.jupLifeLeft).toEqual(58.34);
+  });
+
 });
