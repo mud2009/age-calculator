@@ -16,5 +16,6 @@ export default class Age {
   }
 
   calcJupAge() {
+    return Math.floor(this.earthAge/11.86);
   }
 }
