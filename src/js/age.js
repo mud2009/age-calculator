@@ -22,6 +22,10 @@ export default class Age {
   calcSatAge() {
     return Math.round((this.earthAge/29.46)*100)/100
   }
+
+  calcUrAge() {
+    return Math.round((this.earthAge/84.01)*100)/100
+  }
 }
 
 // let age = new Age(27);
