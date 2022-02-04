@@ -23,3 +23,11 @@ describe ('calcVenAge', () => {
     expect(age.calcVenAge()).toEqual(43);
   });
 });
+
+describe ('calcMarsAge', () => {
+
+  test('should calculate age on Mars', () => {
+    let age = new Age(27);
+    expect(age.calcMarsAge()).toEqual(14);
+  });
+});
