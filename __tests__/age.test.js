@@ -52,6 +52,6 @@ describe ('calcUrAge', () => {
 
   test('should calculate age on Uranus', () => {
     let age = new Age(27);
-    expect(age.calcNepAge()).toEqual(0.32);
+    expect(age.calcUrAge()).toEqual(0.32);
   });
 });
