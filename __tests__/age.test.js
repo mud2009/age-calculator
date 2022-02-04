@@ -41,7 +41,7 @@ describe ('calcAge', () => {
   });
 
   test('should calculate age on Neptune', () => {
-    expect(age.NepAge).toEqual(0.16);
+    expect(age.nepAge).toEqual(0.16);
   });
 });
 
