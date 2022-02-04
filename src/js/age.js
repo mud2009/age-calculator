@@ -21,10 +21,8 @@ export default class Age {
     this.nepAge = Math.round((this.earthAge/164.79)*100)/100
     this.plutoAge = Math.round((this.earthAge/248.59)*100)/100
   }
+
+calcLife() {
+  this.earthLife = 72.74;
 }
-
-// average life expectancy on earth is 72.74 years
-
-// let age = new Age(27)
-// age.calcAge()
-// console.log(age.mercAge)
+}

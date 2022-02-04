@@ -5,6 +5,7 @@ let age;
 beforeEach(() => {
   age = new Age(27);
   age.calcAge();
+  age.calcLife();
 });
 
 describe ('Age', () => {
@@ -48,3 +49,10 @@ describe ('calcAge', () => {
     expect(age.plutoAge).toEqual(0.11);
   });
 });
+
+describe ('calcLife', () => {
+
+  test('should calculate life expectancy for age on earth', () => {
+    expect(age.earthLife).toEqual(72.74);
+  })
+})
