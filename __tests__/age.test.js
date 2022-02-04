@@ -55,4 +55,9 @@ describe ('calcLife', () => {
   test('should calculate life expectancy for age on earth', () => {
     expect(age.earthLife).toEqual(72.74);
   })
+
+  test('should calculate years left for age on mercury', () => {
+    expect(age.mercLife).toEqual(39.76);
+  })
+
 })
