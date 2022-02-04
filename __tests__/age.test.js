@@ -33,13 +33,6 @@ describe ('calcAge', () => {
   });
 });
 
-describe ('calcJupAge', () => {
-
-  test('should calculate age on Jupiter', () => {
-    expect(age.calcJupAge()).toEqual(2.3);
-  });
-});
-
 describe ('calcSatAge', () => {
 
   test('should calculate age on Saturn', () => {
