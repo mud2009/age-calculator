@@ -60,7 +60,15 @@ describe ('calcLife', () => {
     expect(age.mercLifeLeft).toEqual(-39.76);
   })
 
-  test('should return years lived past life expectancy on mercury, if inputted age is high enough', () => {
+  test('if the mercury age is under the human life expectancy, should return life left', () => {
+    let ageYoung = new Age(4);
+    ageYoung.calcAge();
+    ageYoung.calcLife();
+    expect(ageYoung.mercLifeLeft).toEqual(56.04);
+  })
+
+  test('should return years lived past life expectancy on mercury, if age is high enough', () => {
     expect(age.mercLifeLived).toEqual(39.76);
   })
+
 })
