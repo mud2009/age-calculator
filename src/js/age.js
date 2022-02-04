@@ -30,7 +30,8 @@ export default class Age {
   calcNepAge() {
     return Math.round((this.earthAge/164.79)*100)/100
   }
-}
 
-// let age = new Age(27);
-// console.log(age.calcSatAge())
+  calcPlutoAge() {
+    return Math.round((this.earthAge/248.59)*100)/100
+  }
+}
