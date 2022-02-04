@@ -22,7 +22,8 @@ export default class Age {
     this.plutoAge = Math.round((this.earthAge/248.59)*100)/100
   }
 
-calcLife() {
-  this.earthLife = 72.74; // this is the average life expectancy for humans on earth
-}
+  calcLife() {
+    this.earthLife = 72.74; // this is the average life expectancy for humans on earth
+    this.mercLife = Math.round((this.mercAge - 72.74)*100)/100;
+  }
 }
