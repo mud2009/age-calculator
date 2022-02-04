@@ -6,4 +6,7 @@ export default class Age {
   calcMercAge() {
     return this.earthAge/.24;
   }
+
+  calcVenAge() {
+  }
 }

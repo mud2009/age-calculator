@@ -15,3 +15,11 @@ describe ('calcMercAge', () => {
     expect(age.calcMercAge()).toEqual(112.5);
   });
 });
+
+describe ('calcVenAge', () => {
+
+  test('should calculate age on Venus', () => {
+    let age = new Age(27);
+    expect(age.calcVenAge()).toEqual(43.5);
+  });
+});
