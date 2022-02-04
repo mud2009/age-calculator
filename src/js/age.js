@@ -37,10 +37,14 @@ export default class Age {
     }
   }
 
+  calcJupLife() {
+    this.jupLifeLeft = Math.round((72.74 - this.jupAge)*100)/100;
+  }
+
 }
 
-let age = new Age(200);
+let age = new Age(27);
 age.calcAge();
-age.calcMarsLife();  
+age.calcJupLife();  
 console.log(age)
 console.log(age.marsLifeLived)
