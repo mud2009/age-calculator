@@ -53,17 +53,14 @@ describe ('calcAge', () => {
 describe ('calcLife', () => {
 
   test('should calculate life expectancy for age on earth', () => {
-    expect(age.earthLife).toEqual(72.74);
+    expect(age.life).toEqual(72.74);
   })
 
   test('should calculate years left for age on mercury', () => {
-    expect(age.mercLife).toEqual(39.76);
+    expect(age.mercLifeLeft).toEqual(39.76);
   })
 
-  test('should return years lived past life expectancy on mercury', () => {
-    let ageReallyOld = new Age(150);
-    age.calcAge();
-    age.calcLife();  
-    expect(ageReallyOld.mercLife).toEqual(77.26);
+  test('should return years lived past life expectancy on mercury, if inputted age is high enough', () => {
+    expect(ageReallyOld.mercLifeLived).toEqual(77.26);
   })
 })
