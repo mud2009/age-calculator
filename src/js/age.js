@@ -23,6 +23,6 @@ export default class Age {
   }
 
 calcLife() {
-  this.earthLife = 72.74;
+  this.earthLife = 72.74; // this is the average life expectancy for humans on earth
 }
 }
