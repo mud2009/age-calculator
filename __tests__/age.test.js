@@ -79,7 +79,6 @@ describe ('calcMarsLife', () => {
     let ageOld = new Age(200);
     ageOld.calcAge();
     ageOld.calcMarsLife();
-    expect(age.MarsLifeLeft).toEqual(127.26);
+    expect(ageOld.marsLifeLived).toEqual(33.66);
   });
-
 });

@@ -32,13 +32,15 @@ export default class Age {
 
   calcMarsLife() {
     this.marsLifeLeft = Math.round((72.74 - this.marsAge)*100)/100;
-
+    if (this.marsLifeLeft < 0) {
+      this.marsLifeLived = -this.marsLifeLeft;
+    }
   }
 
 }
 
-let age = new Age(27);
+let age = new Age(200);
 age.calcAge();
 age.calcMarsLife();  
 console.log(age)
-// console.log(age.marsLifeLived)
+console.log(age.marsLifeLived)
