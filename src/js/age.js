@@ -9,6 +9,7 @@ export default class Age {
     this.urAge = 0;
     this.nepAge = 0;
     this.plutoAge = 0;
+    this.life = 72.74; // this is the average life expectancy for humans
   }
 
   calcAge() {
@@ -23,7 +24,16 @@ export default class Age {
   }
 
   calcLife() {
-    this.earthLife = 72.74; // this is the average life expectancy for humans on earth
-    this.mercLife = Math.round((this.mercAge - 72.74)*100)/100;
+    this.mercLifeLeft = Math.round((72.74 - this.mercAge)*100)/100;
+    if (this.mercLifeLeft < 0) {
+      this.mercLifeLived = -this.mercLifeLeft;
+    }
   }
 }
+
+// let age = new Age(27);
+// age.calcAge();
+// age.calcLife();  
+// console.log(age.mercAge)
+// console.log(age)
+// console.log(age.mercLifeLived)
