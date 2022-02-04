@@ -1,6 +1,6 @@
-# (Application Name)
+# Solar System Age Calculator
 
-#### (Brief Description of Application)
+#### Calculates different ages on various planets in the solar system
 
 #### By Will Greenberg
 
@@ -10,10 +10,16 @@
 * CSS
 * Javascript
 * jQuery
+* Bootstrap
+* Popper.js
+* Webpack
+* ESLint
+* Jest
+* Babel
 
 ## Description
 
-This site allows users to _blah blah blah fill this in_ :grin:
+This site calculates what a specific user inputted age would be on various planets in the solar system, by calculating the difference in time to revolve around our sun.
 
 ## Link to site
 
@@ -23,9 +29,9 @@ This site is accessible [here](/).
 
 * Clone this repository to your desktop.
 * Navigate to the top level of the directory.
-* Open _blah blah blah fill this_ in your browser.
+* Navigate to age-calculator in your browser.
 * To install the necessary dependencies, run `$ npm install` and `$ npm run build`.
-* Once application is open, run `$ npm test`.
+* Once application is open, run `$ npm test` to see tests written for the site.
 
 ## Known Bugs
 
