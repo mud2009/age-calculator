@@ -4,6 +4,7 @@ let age;
 
 beforeEach(() => {
   age = new Age(27);
+  age.calcAge();
 });
 
 describe ('Age', () => {
@@ -13,10 +14,10 @@ describe ('Age', () => {
   });
 });
 
-describe ('calcMercAge', () => {
+describe ('calcAge', () => {
 
   test('should calculate age on Mercury', () => {
-    expect(age.calcMercAge()).toEqual(112.5);
+    expect(age.mercAge).toEqual(112.5);
   });
 });
 
