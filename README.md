@@ -31,7 +31,7 @@ This site is accessible [here](/).
 * Navigate to the top level of the directory.
 * Navigate to age-calculator in your browser.
 * To install the necessary dependencies, run `$ npm install` and `$ npm run build`.
-* Then run `$ npm test` to see tests written for the site.
+* Then run `$ npm test` to see tests written for the site's business logic.
 * Once tested, run `$ npm run start` to have the site open in browser.
 
 
