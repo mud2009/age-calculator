@@ -61,3 +61,10 @@ describe ('calcNepAge', () => {
     expect(age.calcNepAge()).toEqual(0.16);
   });
 });
+
+describe ('calcPlutoAge', () => {
+
+  test('should calculate age on Pluto', () => {
+    expect(age.calcPlutoAge()).toEqual(0.11);
+  });
+});
