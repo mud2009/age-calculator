@@ -90,4 +90,10 @@ describe ('calcJupLife', () => {
     expect(age.jupLifeLeft).toEqual(70.44);
   });
 
+  test('should return years lived past life expectancy if age is high enough', () => {
+    let ageOld = new Age(1000);
+    ageOld.calcAge();
+    ageOld.calcVenLife();
+    expect(ageOld.venLifeLived).toEqual(11.56);
+  })
 });
