@@ -23,13 +23,9 @@ describe ('calcAge', () => {
   test('should calculate age on Venus', () => {
     expect(age.venAge).toEqual(43.5);
   });
-});
-
-
-describe ('calcMarsAge', () => {
 
   test('should calculate age on Mars', () => {
-    expect(age.calcMarsAge()).toEqual(14.4);
+    expect(age.marsAge).toEqual(14.4);
   });
 });
 
