@@ -1,9 +1,9 @@
-export default class Haiku {
+export default class Age {
   constructor(earthAge){
-    this.earthAge = earthAge
+    this.earthAge = earthAge;
   }
 
   calcMercAge() {
-    return this.earthAge/.24
+    return this.earthAge/.24;
   }
 }
