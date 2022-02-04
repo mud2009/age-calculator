@@ -23,11 +23,12 @@ export default class Age {
     this.plutoAge = Math.round((this.earthAge/248.59)*100)/100
   }
 
-  calcLife() {
+  calcMercLife() {
     this.mercLifeLeft = Math.round((72.74 - this.mercAge)*100)/100;
     if (this.mercLifeLeft < 0) {
       this.mercLifeLived = -this.mercLifeLeft;
     }
+
   }
 }
 
