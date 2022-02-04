@@ -87,7 +87,7 @@ describe ('calcJupLife', () => {
   });
 
   test('should calculate years left for age on jupiter, and return years left if that number is positive', () => {
-    expect(age.jupLifeLeft).toEqual(58.34);
+    expect(age.jupLifeLeft).toEqual(70.44);
   });
 
 });
