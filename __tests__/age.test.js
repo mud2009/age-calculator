@@ -8,10 +8,10 @@ describe ('Age', () => {
   });
 });
 
-describe ('calcMercAge', () => {
+describe ('calcAge', () => {
 
   test('should calculate age on Mercury', () => {
     let age = new Age(27);
-    expect(age.calcMercAge()).toEqual(112.5)
+    expect(age.mercAge).toEqual(112.5)
   });
 });
