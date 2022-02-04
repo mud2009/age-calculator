@@ -54,10 +54,7 @@ describe ('calcVenLife', () => {
     age.calcVenLife();
   });
 
-  test('should calculate years left for age on venus', () => {
-    expect(age.venLifeLeft).toEqual(29.24);
-  });
-  test('if the venus age is under the human life expectancy, should return life left', () => {
+  test('should calculate years left for age on venus, and return years left', () => {
     expect(age.venLifeLeft).toEqual(29.24);
   });
   test('should return years lived past life expectancy on venus, if age is high enough', () => {
@@ -74,7 +71,15 @@ describe ('calcMarsLife', () => {
     age.calcMarsLife();
   });
 
-  test('should calculate years left for age on Mars', () => {
+  test('should calculate years left for age on Mars, and return years left', () => {
     expect(age.marsLifeLeft).toEqual(58.34);
   });
+
+  test('if the mars age is over the human life expectancy, should return years lived past expectancy', () => {
+    let ageOld = new Age(200);
+    ageOld.calcAge();
+    ageOld.calcMarsLife();
+    expect(age.MarsLifeLeft).toEqual(127.26);
+  });
+
 });
