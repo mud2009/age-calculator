@@ -4,19 +4,19 @@ export default class Age {
   }
 
   calcMercAge() {
-    return Math.floor(this.earthAge/.24);
+    return Math.round((this.earthAge/.24)*10)/10;
   }
 
   calcVenAge() {
-    return Math.floor(this.earthAge/.62);
+    return Math.round((this.earthAge/.62)*10)/10;
   }
 
   calcMarsAge() {
-    return Math.floor(this.earthAge/1.88);
+    return Math.round((this.earthAge/1.88)*10)/10;
   }
 
   calcJupAge() {
-    return Math.floor(this.earthAge/11.86);
+    return Math.round((this.earthAge/11.86)*10)/10;
   }
 
   calcSatAge() {
