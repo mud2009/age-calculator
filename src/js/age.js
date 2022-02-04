@@ -2,14 +2,12 @@ export default class Age {
   constructor(earthAge){
     this.earthAge = earthAge;
     this.mercAge = 0;
+    this.venAge = 0;
   }
 
   calcAge() {
     this.mercAge = Math.round((this.earthAge/.24)*10)/10;
-  }
-
-  calcVenAge() {
-    return Math.round((this.earthAge/.62)*10)/10;
+    this.venAge = Math.round((this.earthAge/.62)*10)/10;
   }
 
   calcMarsAge() {
@@ -39,6 +37,6 @@ export default class Age {
 
 // average life expectancy on earth is 72.74 years
 
-let age = new Age(27)
-age.calcAge()
-console.log(age.mercAge)
+// let age = new Age(27)
+// age.calcAge()
+// console.log(age.mercAge)
