@@ -39,12 +39,8 @@ export default class Age {
 
   calcJupLife() {
     this.jupLifeLeft = Math.round((72.74 - this.jupAge)*100)/100;
+    if (this.jupLifeLeft < 0) {
+      this.jupLifeLived = -this.jupLifeLeft;
+    }
   }
-
 }
-
-let age = new Age(27);
-age.calcAge();
-age.calcJupLife();  
-console.log(age)
-console.log(age.marsLifeLived)
