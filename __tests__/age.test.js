@@ -57,10 +57,10 @@ describe ('calcLife', () => {
   })
 
   test('should calculate years left for age on mercury', () => {
-    expect(age.mercLifeLeft).toEqual(39.76);
+    expect(age.mercLifeLeft).toEqual(-39.76);
   })
 
   test('should return years lived past life expectancy on mercury, if inputted age is high enough', () => {
-    expect(ageReallyOld.mercLifeLived).toEqual(77.26);
+    expect(age.mercLifeLived).toEqual(39.76);
   })
 })
