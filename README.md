@@ -21,10 +21,6 @@
 
 This site calculates what a specific user inputted age would be on various planets in the solar system, by calculating the difference in time to revolve around our sun.
 
-## Link to site
-
-This site is accessible [here](/).
-
 ## Setup/Installation Requirements
 
 * Clone this repository to your desktop.
