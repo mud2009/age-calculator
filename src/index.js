@@ -11,8 +11,10 @@ $('#age').submit(function(event){
   let age = new Age(userAge);
 
   age.calcAge();
+  $('#mercuryAge-out').text(age.mercAge);
+  $('#venusAge-out').text(age.venAge);
+  $('#marsAge-out').text(age.marsAge);
+  $('#jupiterAge-out').text(age.jupAge);
 
-  $('#mercury-out').text(age.mercAge);
 
-  console.log(age.mercAge);
 });
