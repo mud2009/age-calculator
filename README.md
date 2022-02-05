@@ -31,7 +31,7 @@ This application calculates what a specific user inputted age would be on variou
 
 ## Known Bugs
 
-* None so far.
+* Site only has the age on each planet for now.
 
 ## License
 
