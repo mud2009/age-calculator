@@ -27,6 +27,7 @@ This application calculates what a specific user inputted age would be on variou
 * Navigate to age-calculator in your terminal.
 * To install the necessary dependencies, run `$ npm install` and `$ npm run build`.
 * Then run `$ npm test` to see tests written for the site's business logic.
+* Run `$ npm run start` to see the site in your browser.
 
 ## Known Bugs
 
